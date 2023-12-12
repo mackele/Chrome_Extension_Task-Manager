@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
+    justify-content: space-evenly;
     
     background-color: #fff;
     margin: 5px;
@@ -20,7 +20,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#add-task {
+#task-description {
     width: 80%;
     padding: 10px;
     margin-bottom: 10px;
@@ -33,7 +33,7 @@ body {
 #add-button {
     width: 60%;
     margin: auto;
-    
+
     outline: none;
     cursor: pointer;
     padding: 0 16px;
@@ -45,4 +45,65 @@ body {
     line-height: 30px;
     font-weight: 400;
     text-align: center;
+}
+
+span {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+li {
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding: 4px;
+    border-radius: 0,25rem;
+
+    background-color: #f4f4f4;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.task-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-bottom: 5px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 5px;
+}
+
+.buttons-container > button {
+    margin: 2px;
+
+    cursor: pointer;
+    padding: 0 5px;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #dddbda;
+    color: #0070d2;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+    :hover {
+        background-color: #f4f6f9; 
+    } 
+}
+
+select {
+    width: 65%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
 }

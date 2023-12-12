@@ -12,10 +12,21 @@
 </head>
 <body>
     <div id="wrapper">
-        <input type="text" placeholder="Add task..." id="add-task" required>
-        <input type="date" id="due-date" value= "${getTodaysDate()}" required>
+        <label for="task-description">Task Description</label>
+        <input type="text" placeholder="Add task..." id="task-description">
+        <label for="date">Due Date</label>
+        <input type="date" id="due-date" value= "${getTodaysDate()}">
         <button id="add-button">Add task</button>
-        <ul id="added-tasks"></ul>
+
+        <select name="tasks" id="sorting">Sort
+            <option value="">Sort by...</option>
+            <option value="completed">Completed tasks</option>
+            <option value="not-completed">Unfinished tasks</option>
+            <option value="most-urgent">By closest date</option>
+            <option value="least-urgent">By latest date</option>
+        </select>
+
+        <ul id="task-list"></ul>
     </div>
 
     <script src="script.js"></script>

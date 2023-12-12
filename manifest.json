@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Task-Handler",
+    "description": "Chrome extension to handle tasks",
+    "version": "1.0",
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "storage"
+    ]
+}
